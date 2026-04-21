@@ -1,0 +1,66 @@
+h1 {
+  text-align: center;
+  font-size: 45px;
+ font-family: "Sunshiney", cursive;
+  font-weight: 400;
+  font-style: normal;
+margin: 4;}
+h2 {
+  text-align: center;
+  font-size: 25px;
+ font-family: "Sunshiney", cursive;
+  font-weight: 400;
+  font-style: normal;
+margin: 4;}
+body {
+  text-align: center;
+  background-color: #fff8eb;
+  color: #f28593;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.night-mode {
+  background-color: #401c23;
+  color: #fff8eb;
+}
+
+#toggle-mode {
+  padding: 12px 24px;
+  background-color: #f28593;
+  color: #fff8eb;
+  border: none;
+ border-radius: 25px;
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+}
+.side-left, .side-right {
+  flex: .55; 
+  background-color: #84ab54;
+}
+.content {
+  flex: 3;
+}
+footer {
+  font-size: 45px;
+}
+
+.faq-answer {
+  display: none;
+}
+.faq-answer.show {
+  display: block;
+   padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #f28593;
+  color: #fff8eb;
+  border: none;
+ border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
