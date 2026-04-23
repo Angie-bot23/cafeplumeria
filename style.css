@@ -1,10 +1,45 @@
+ui;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+}
+drinkandfood {
+  margin-top: 0em;
+  text-align: left;
+  font-size: 35px;
+  list-style-position: inside;
+  justify-content: center;
+  display:flex;
+line-height: 55px;
+}
+drinkandfood ul{
+  margin-top:0em;
+  margin-bottom:0em;
+  color: #84ab54;
+}
+#show-special {
+  padding: 10px 20px;
+  background: #84ab54;
+  color: #401c23;
+  border: none;
+  border-radius: 10px;
+  font-family: "Sunshiney";
+  font-size: 25px;
+  cursor: pointer;
+}
+#daily-special {
+  margin-top: 15px;
+  color: #f28593;
+  font-size: 25px;
+}
 h1 {
+  margin:0;
   text-align: center;
   font-size: 45px;
  font-family: "Sunshiney", cursive;
   font-weight: 400;
   font-style: normal;
-margin: 4;}
+margin-bottom: 1;}
 h2 {
   text-align: center;
   font-size: 25px;
@@ -32,35 +67,74 @@ body {
  border-radius: 25px;
   cursor: pointer;
 }
-.wrapper {
-  display: flex;
-}
-.side-left, .side-right {
-  flex: .55; 
-  background-color: #84ab54;
-}
-.content {
-  flex: 3;
+
+
 }
 footer {
   font-size: 45px;
 }
 
+.faq-question{
+  padding: 15px;
+  margin-top:10px;
+  background: #84ab54;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 35%;
+  display:block;
+  text-align: center;
+  margin:10px auto;
+  font-size: 18px;
+  font-family: "Flamenco"
+}
+
 .faq-answer {
-  display: none;
+  color: #855988;
+  display:none;
 }
 .faq-answer.show {
   display: block;
-   padding: 12px 16px;
-  border-radius: 10px;
-  margin-bottom: 12px;
 }
-button {
+
+#toggle-mode{
   padding: 10px 20px;
-  background-color: #f28593;
-  color: #fff8eb;
+  background-color: #84ab54;
+  color: #fff;
   border: none;
- border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
   margin-bottom: 20px;
+}
+#toggle-mode:hover{
+  background-color: #fc4c84;
+}
+.head-box {
+  float: center;
+}
+.faq-question:hover {
+background-color: #fc4c84;
+}
+button {
+  font-size: 18px;
+  font-family: "Flamenco";
+}
+nav ul {
+  display: flex; 
+  justify-content: center; 
+  list-style: none; 
+  background: #84ab54;
+  border-radius: 30px;
+  padding: 12px;
+}
+li a{
+  color: white;
+}
+nav li {
+  justify-content: center;
+    margin: 0 15px;
+color: white;
+}
+nav li a:hover {
+    color: #fc4c84; 
 }
