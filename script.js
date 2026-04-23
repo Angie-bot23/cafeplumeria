@@ -1,3 +1,19 @@
+const menuItems =["Latte", "Espresso", "Green Tea", "Iced Coffee", "Pinol", "Café Con Leche", "Milk", "Juice", "Sweet Tea"];
+
+const menuList = document.getElementById("menu-list");
+
+ menuItems.forEach(menuNames => { const newListItem = document.createElement("li");
+                         newListItem.innerText = menuNames;
+ menuList.appendChild(newListItem);
+});
+
+const button = document.getElementById("show-special");
+const display = document.getElementById("daily-special");
+
+button.addEventListener("click", () => {
+  const randomItem = menuItems[Math.floor(Math.random() * menuItems.length)];
+  display.textContent = `Today's Special: ${randomItem}`;
+});
 const toggleBtn = document.getElementById("toggle-mode");
 const body = document.body;
 const img = document.getElementById("cafe-img");
